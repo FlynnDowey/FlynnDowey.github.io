@@ -34,11 +34,8 @@ plugins:
 collections:
   projects:
     output: true 
-navbar:
-  - name: "Home"
-    link: "/"
-  - name: "Projects"
-    link: "/projects/"
+
+markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
