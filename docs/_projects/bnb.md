@@ -6,6 +6,10 @@ date: 2024-12-06
 permalink: /projects/bnb/
 usemathjax: true
 ---
+### Useful Links
+[Link to the repository](https://gitfront.io/r/fmdowey/WivfHKou6N7z/EECE571F-project/)
+
+<a href="{{ site.baseurl }}/reports/571F_project_report-final_Redacted.pdf" target="_blank">View the report</a> 
 
 ### Project Overview
 In our work, we propose an off-policy policy gradient (OFF-PG) approach to learn variable selection in Branch and Bound. Unlike on-policy RL
@@ -23,9 +27,37 @@ We train our model on the following set of combinatorial optimization (CO) probl
 | Problem                       | Training: easy                       | Testing: easy                       | Testing: medium                     | Testing: hard                       |
 | :-----------------------------| :-----------------------------------: | :---------------------------------: | :---------------------------------: | :---------------------------------: |
 | Set Covering                  | n_cols = 1000, n_rows = 500          | n_cols = 1000, n_rows = 500         | n_cols = 1000, n_rows = 600         | n_cols = 1000, n_rows = 700         |
-| Capacitated Facility Location | $n_facilities$ = 50, n_customers = 100 | n_facilities = 50, n_customers = 150 | n_facilities = 50, n_customers = 200 |                                     |
+| Capacitated Facility Location | n_facilities = 50, n_customers = 100 | n_facilities = 50, n_customers = 100 | n_facilities = 50, n_customers = 150 | n_facilities = 50, n_customers = 200 | 
+
+We compare against version 8.1 of PySCIPOpt [1] , which uses a variant of hybrid
+pseudo branching (HPB), and an imitation learning method proposed in [2] denoted as (GCNN). We
+neglect to include a full strong brancher (FSB) as it is not competitive in terms of running time, despite
+producing tiny search trees.
+
+#### Performance comparison on Set Covering
+
+| Model   | Easy (Time ± %)     | Easy (Wins) | Easy (Nodes ± %) | Medium (Time ± %) | Medium (Wins) | Medium (Nodes ± %) | Hard (Time ± %) | Hard (Wins) | Hard (Nodes ± %) |
+|---------|---------------------|-------------|------------------|-------------------|---------------|--------------------|-----------------|-------------|------------------|
+| HPB     | 3.78 ± 28.16%       | 6/30        | 381.10 ± 41.05%  | 4.32 ± 18.60%    | 7/30          | 339.97 ± 23.14%    | 6.43 ± 7.41%    | 17/30       | 727.83 ± 20.43%  |
+| GCNN    | 3.61 ± 33.38%       | 12/30       | 325.50 ± 33.86%  | 4.22 ± 19.99%    | 13/30         | 299.43 ± 20.02%    | 8.09 ± 5.06%    | 7/30        | 609.13 ± 18.28%  |
+| OFF-PG  | 3.71 ± 31.15%       | 6/30        | 344.80 ± 35.18%  | 4.39 ± 17.97%    | 10/30         | 309.13 ± 19.33%    | 7.78 ± 5.42%    | 6/30        | 601.47 ± 18.92%  |
+
+#### Performance comparison on Capacitated Facility Location
+
+| Model   | Easy (Time ± %)     | Easy (Wins) | Easy (Nodes ± %) | Medium (Time ± %) | Medium (Wins) | Medium (Nodes ± %) | Hard (Time ± %) | Hard (Wins) | Hard (Nodes ± %) |
+|---------|---------------------|-------------|------------------|-------------------|---------------|--------------------|-----------------|-------------|------------------|
+| HPB     | 10.91 ± 3.06%       | 7/30        | 162.87 ± 20.47%  | 20.55 ± 1.19%    | 3/30          | 151.33 ± 17.29%    | 26.82 ± 0.82%   | 1/30        | 86.07 ± 16.53%   |
+| GCNN    | 9.72 ± 4.23%        | 8/30        | 234.27 ± 20.11%  | 15.09 ± 2.02%    | 14/30         | 248.33 ± 19.43%    | 15.69 ± 1.75%   | 17/30       | 135.70 ± 16.73%  |
+| OFF-PG  | 8.35 ± 4.99%        | 15/30       | 210.53 ± 20.31%  | 13.96 ± 2.11%    | 13/30         | 218.73 ± 16.17%    | 15.08 ± 1.80%   | 12/30       | 127.10 ± 15.47%  |
 
 
-[Link to the repository](https://gitfront.io/r/fmdowey/WivfHKou6N7z/EECE571F-project/)
-
-<a href="{{ site.baseurl }}/reports/571F_project_report-final_Redacted.pdf" target="_blank">View the report</a> 
+### References
+1. MAHER, Stephen; MILTENBERGER, Matthias; PEDROSO, João P.; REHFELDT, Daniel;  
+SCHWARZ, Robert; SERRANO, Felipe: *PySCIPOpt: Mathematical Programming in Python with the SCIP Optimization Suite*.  
+In: *Mathematical Software – ICMS 2016*. Springer International Publishing, 2016, pp. 301–307.
+2. GASSE, Maxime; CHETELAT, Didier; FERRONI, Nicola; CHARLIN, Laurent; LODI, Andrea:  
+*Exact Combinatorial Optimization with Graph Convolutional Neural Networks*.  
+In: WALLACH, H. (Ed.); LAROCHELLE, H. (Ed.); BEYGELZIMER, A. (Ed.); ALCHÉ-BUC, F. d' (Ed.);  
+FOX, E. (Ed.); GARNETT, R. (Ed.): *Advances in Neural Information Processing Systems*, Vol. 32.  
+Curran Associates, Inc., 2019.  
+[URL](https://proceedings.neurips.cc/paper_files/paper/2019/file/d14c2267d848abeb81fd590f371d39bd-Paper.pdf)
