@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to My Webpage!
+Here, you’ll find an overview of my projects, discussions, and insights into my areas of expertise.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+About Me:
+I am a master's student in engineering with a strong passion for machine learning, algorithms, and optimization. My hands-on experience with PyTorch has allowed me to delve deeply into innovative problem-solving and computational design.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I am currently seeking full-time, permanent career opportunities starting in the summer or fall of 2025, aligning with my expected graduation date.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Feel free to explore my work, and don’t hesitate to reach out!
