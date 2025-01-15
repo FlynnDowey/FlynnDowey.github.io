@@ -26,8 +26,8 @@ We train our model on the following set of combinatorial optimization (CO) probl
 
 | Problem                       | Training: easy                       | Testing: easy                       | Testing: medium                     | Testing: hard                       |
 | :-----------------------------| :-----------------------------------: | :---------------------------------: | :---------------------------------: | :---------------------------------: |
-| Set Covering                  | n_cols = 1000, n_rows = 500          | n_cols = 1000, n_rows = 500         | n_cols = 1000, n_rows = 600         | n_cols = 1000, n_rows = 700         |
-| Capacitated Facility Location | n_facilities = 50, n_customers = 100 | n_facilities = 50, n_customers = 100 | n_facilities = 50, n_customers = 150 | n_facilities = 50, n_customers = 200 | 
+| Set Covering                  | $n_{\text{cols}}$ = 1000, $n_{\text{rows}}$ = 500          | $n_{\text{cols}}$ = 1000, $n_{\text{rows}}$ = 500         | $n_{\text{cols}}$ = 1000, $n_{\text{rows}}$ = 600         | $n_{\text{cols}}$ = 1000, $n_{\text{rows}}$ = 700         |
+| Capacitated Facility Location | $n_{\text{facilities}}$ = 50, $n_{\text{customers}}$ = 100 | $n_{\text{facilities}}$ = 50, $n_{\text{customers}}$ = 100 | $n_{\text{facilities}}$ = 50, $n_{\text{customers}}$ = 150 | $n_{\text{facilities}}$ = 50, $n_{\text{customers}}$ = 200 | 
 
 We compare against version 8.1 of PySCIPOpt [1] , which uses a variant of hybrid
 pseudo branching (HPB), and an imitation learning method proposed in [2] denoted as (GCNN). We
