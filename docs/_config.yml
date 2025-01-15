@@ -23,8 +23,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bookmark this page to keep up with my most recent projects!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://FlynnDowey.github.io # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  FlynnDowey
-linkedin_username: flynn-dowey
+
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/FlynnDowey" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/flynn-dowey/" }
 
 # Build settings
 theme: minima
@@ -35,7 +38,10 @@ collections:
   projects:
     output: true 
 
-markdown: kramdown
+header_pages:
+  - about.md
+  - projects.md
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
