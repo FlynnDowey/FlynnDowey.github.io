@@ -6,40 +6,50 @@ permalink: /about/
 
 ## About Me
 
-Hello, and welcome to my website! I'm a passionate problem solver and researcher with a strong background in applied science, software development, and machine learning. My expertise lies in leveraging technology to tackle complex challenges in wireless and IoT networks. My research focuses on applying reinforcement learning to replace classical heuristic methods traditionally used in solving combinatorial optimization problems in networking.
+Hello, and welcome to my website! I am a Software and machine learning engineer with an MASc in Electrical and Computer Engineering and experience building Python-based data pipelines, validation systems, and reproducible machine learning workflows. Experienced in processing complex sensor and geospatial data, evaluating ML methods, investigating system failures, and developing reliable engineering software. Familiar with Docker, MLflow, Google Cloud Platform, Git, and Linux, and actively building deeper expertise in model deployment, automation, monitoring, and cloud-based ML infrastructure. Seeking an MLOps, ML systems, or machine learning engineering role with opportunities to grow into production ML platform ownership. 
 
 ---
 
 ## Skills
 
-### Programming Languages
-- Python: Extensive experience in data science, deep learning, and optimization
-- MATLAB: Expertise in simulation, modeling, and numerical analysis
-- Java: Proficient in OOP and algorithm development
-- C: Proficient in developing embedded systems and Linux-based applications
+- **Programming & Scripting**: Python, MATLAB, C/C++, SQL
+- **Data & Analysis**: pandas, NumPy, SciPy, statistical analysis, signal processing, anomaly detection, data validation, experimental design
+- **Systems & Tools**: Linux, Docker, Git, SQLite, Redis, Google Cloud Platform, MLflow
+- **Engineering Workflows**: QA/QC systems, reproducible experimentation, performance benchmarking, workflow automation, deployment support, error handling
+- **Domain Experience**: geospatial data processing, sensor data pipelines, GPR, magnetometer analysis, wireless network simulation, RF/IoT systems
+- **Visualization / Inspection**: QGIS 
 
-### Core Competencies
-- Deep Learning: Designing, training, and deploying neural networks
-- Reinforcement Learning: Solving real-world problems using RL techniques
-- Generative AI: Developing models for creative applications, such as GANs and VAEs
-- Bayesian Methods: Leveraging Bayesian models to describe uncertainty in modeling and decision-making
-- Monte Carlo Methods: Proficient in MCMC, Monte Carlo simulations, and stochastic optimization
-- Variational Models: Applying variational inference for probabilistic models and latent variable optimization
-- Graph Neural Networks: Designing and implementing GNNs for structured data and network analysis
-- Optimization: Advanced skills in ML-augmented optimization and solving combinatorial problems, with experience in MILPs, convex optimization, and other mathematical programming techniques
-- Embedded Systems: Developing real-time solutions using C and Linux-based systems
+
+# Work Experience
+## Machine Learning and Software Engineer 
+### Sawback Technologies Inc. | May 2025 -  Present
+- Built a Python application that ingests, preprocesses, analyzes, and exports GPR data, turning raw field measurements into repeatable outputs for engineering review.
+- Introduced automated validation checks, anomaly detection, and standardized QA/QC reporting for field-collected data, reducing manual processing effort by 50%.
+- Investigated failures and inconsistencies across GPR and magnetometer datasets, identified weaknesses in data and processing workflows, and implemented changes that improved output reliability.
+- Developed reusable components for geospatial and sensor-processing pipelines, making analytical workflows easier to test, repeat, and extend.
+Used pandas, SciPy, and QGIS to validate processed outputs, trace unexpected results, and translate analytical findings into practical improvements for field and software teams.
+- Prototyped LLM-assisted internal tools that streamlined technical documentation, supported data analysis, and made engineering workflows easier for team members to use.
+
+## Research Assistant
+### Semtech | Sep 2023 – May 2025
+- Rebuilt core functionality from a legacy MATLAB wireless network simulator in Python, improving maintainability, runtime performance, and compatibility with modern machine learning workflows.
+- Created reproducible Python experimentation pipelines for algorithm development, model evaluation, and comparative benchmarking, enabling more consistent results across research iterations.
+Developed and validated RF and IoT propagation models used to simulate large-scale wireless networks and evaluate performance under different operating conditions.
+- Designed a reinforcement-learning optimization method for self-organizing wireless networks, benchmarked it against established approaches, and achieved substantial improvements in network lifetime.
+- Worked with engineering teams to translate research requirements into scalable software components, validate system behaviour, and deliver technically sound results.
 
 ---
 
 ## Education
-- Master of Applied Science, The University of British Columbia, *in progress*
+- Master of Applied Science, The University of British Columbia, 2025
 - Bachelor of Applied Science, Simon Fraser University, 2023
 
 ---
 
 ## Interests  
-- Combinatorial Optimization with Reinforcement Learning: Merging AI and optimization for breakthrough solutions
-- Emerging Technologies: Continuously learning and experimenting with cutting-edge advancements in AI 
+- MLOps
+- LLM integration
+- Geospatial ML
 
 ---
 
